@@ -12,13 +12,18 @@
 <body>
     <h1>Blackjack</h1>
     <p id="message-el">Want to play a round?</p>
-    <p id="cards-el">Cards:</p>
-    <p id="sum-el">Sum:</p>
-    <button onclick="startGame()">START GAME</button>
+    <p id="casino-el">Dealer's hand:</p>
+    <p id="sum-casino-el">Total: </p>
+    <p id="cards-el">Your hand:</p>
+    <p id="sum-el">Total:</p>
+    <button onclick="startGame(); startCasino()">START GAME</button>
     <br>
-    <button onclick="newCard()">NEW CARD</button>
+    <button onclick="newCard(); newCardCasino()">NEW CARD</button>
     <br>
+    <button onclick="cashOut()">CASH OUT</button>
     <p id="player-el"></p>
+    <input id="name-input" type="text">
+    <button id="player-name" onclick="namePlayer()">Enter Name</button>
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
-    font-size: 50px;
+    font-size: 44px;
     text-align: center;
     background-image: url("table.jpeg");
     background-size: cover;
@@ -19,10 +19,25 @@ h1 {
 button {
     color: #016f32;
     width: 400px;
-    height: 100px;
+    height: 50px;
     background: goldenrod;
     font-size: 30px;
     font-weight: bold;
     border-radius: 20px;
     margin: 5px;
+    cursor: pointer;
+}
+
+#player-name {
+    font-size: 15px;
+    width: 200px;
+    height: 25px;
+    border-radius: 0;
+    color: goldenrod;
+    background-color: #016f32;
+}
+
+#name-input, #player-name{
+    position: relative;
+    bottom: 50px;
 }
